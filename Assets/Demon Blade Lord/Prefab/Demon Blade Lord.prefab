@@ -409,7 +409,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4772241058340664}
   - component: {fileID: 95610678145862172}
-  - component: {fileID: 64197709642177716}
   m_Layer: 0
   m_Name: Demon Blade Lord
   m_TagString: Untagged
@@ -451,20 +450,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!64 &64197709642177716
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1248638086229940}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Convex: 1
-  m_CookingOptions: 14
-  m_Mesh: {fileID: 0}
 --- !u!1 &1274395610504830
 GameObject:
   m_ObjectHideFlags: 0

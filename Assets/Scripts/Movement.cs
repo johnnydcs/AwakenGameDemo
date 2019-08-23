@@ -10,7 +10,6 @@ public class Movement : MonoBehaviour
 
     Vector3 position = Vector3.zero;
 
-    // Start is called before the first frame update
     void Start()
     {
         rb = this.GetComponent<Rigidbody>();
@@ -19,10 +18,25 @@ public class Movement : MonoBehaviour
         position = this.transform.position;
     }
 
-    // Update is called once per frame
     void Update()
     {
+        CheckAttack();
         CheckMovement();
+    }
+
+    void CheckAttack()
+    {
+        if (Input.GetKeyDown(KeyCode.Q) && !anim.GetCurrentAnimatorStateInfo(0).IsName("Attack2"))
+        {
+            //isAttacking = true;
+            anim.Play("Attack1");
+        }
+
+        if (Input.GetKeyDown(KeyCode.E) && !anim.GetCurrentAnimatorStateInfo(0).IsName("Attack1"))
+        {
+            //isAttacking = true;
+            anim.Play("Attack2");
+        }
     }
 
     void CheckMovement()
@@ -42,21 +56,16 @@ public class Movement : MonoBehaviour
         else if (Input.GetKeyDown(KeyCode.A))
             hdir = -20.0f;
 
-        /*
-        // 20 units per square
-        if (Input.GetAxis("Vertical") > 0)
-            vdir = 20.0f;
-        else if (Input.GetAxis("Vertical") < 0)
-            vdir = -20.0f;
+        if (anim.GetCurrentAnimatorStateInfo(0).IsName("Attack1") || anim.GetCurrentAnimatorStateInfo(0).IsName("Attack2"))
+        {
+            Debug.Log("IsAttacking, cannot move.");
+        }
 
-        if (Input.GetAxis("Horizontal") > 0)
-            hdir = 20.0f;
-        else if (Input.GetAxis("Horizontal") < 0)
-            hdir = -20.0f;
-        */
-
-        Vector3 movedir = new Vector3(hdir, 0, vdir);
-        movedir = transform.TransformDirection(movedir);
-        controller.Move(movedir);
+        else
+        {
+            Vector3 movedir = new Vector3(hdir, 0, vdir);
+            movedir = transform.TransformDirection(movedir);
+            controller.Move(movedir);
+        }
     }
 }
