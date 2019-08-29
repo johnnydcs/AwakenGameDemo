@@ -4,13 +4,20 @@ using UnityEngine;
 
 public class MonsterMovement : MonoBehaviour
 {
-    // Start is called before the first frame update
+    Rigidbody rb;
+    Animator anim;
+    CharacterController controller;
+
+    Vector3 position = Vector3.zero;
+
     void Start()
     {
-        
+        rb = this.GetComponent<Rigidbody>();
+        anim = this.GetComponent<Animator>();
+        controller = this.GetComponent<CharacterController>();
+        position = this.transform.position;
     }
-
-    // Update is called once per frame
+    
     void Update()
     {
         

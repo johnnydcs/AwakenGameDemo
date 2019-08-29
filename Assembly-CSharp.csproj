@@ -62,10 +62,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\DragAndDrop.cs" />
     <Compile Include="Assets\Scripts\MonsterMovement.cs" />
     <Compile Include="Assets\Scripts\Movement.cs" />
-    <None Include="Assets\Demon Blade Lord\readMe.txt" />
-    <None Include="Assets\RainEntertainment\FantasyMonster4\Chaos Knight Warrior\readMe.txt" />
+    <None Include="Assets\Imported Assets\Demon Blade Lord\readMe.txt" />
+    <None Include="Assets\Imported Assets\RainEntertainment\FantasyMonster4\Chaos Knight Warrior\readMe.txt" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>C:/Users/Johnny/Desktop/Git/AwakenGameDemo/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>

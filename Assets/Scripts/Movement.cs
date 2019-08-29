@@ -28,14 +28,17 @@ public class Movement : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Q) && !anim.GetCurrentAnimatorStateInfo(0).IsName("Attack2"))
         {
-            //isAttacking = true;
             anim.Play("Attack1");
         }
 
         if (Input.GetKeyDown(KeyCode.E) && !anim.GetCurrentAnimatorStateInfo(0).IsName("Attack1"))
         {
-            //isAttacking = true;
             anim.Play("Attack2");
+        }
+
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            anim.Play("PowerUp1");
         }
     }
 
