@@ -34,7 +34,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 30, y: 10}
+  m_AnchoredPosition: {x: 25, y: 10}
   m_SizeDelta: {x: 30, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3929118042251289037
@@ -304,10 +304,10 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
+    m_FontSize: 10
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 10
+    m_MinSize: 1
     m_MaxSize: 40
     m_Alignment: 1
     m_AlignByGeometry: 0
@@ -508,7 +508,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -30, y: 10}
+  m_AnchoredPosition: {x: -25, y: 10}
   m_SizeDelta: {x: 30, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4515373504078302603
@@ -647,6 +647,7 @@ GameObject:
   - component: {fileID: 5710507711668896607}
   - component: {fileID: 817922588412459748}
   - component: {fileID: 2541313823115001515}
+  - component: {fileID: 4758069499350296781}
   m_Layer: 5
   m_Name: Card
   m_TagString: Untagged
@@ -789,6 +790,18 @@ MonoBehaviour:
   leftText: {fileID: 8414418532023325973}
   rightText: {fileID: 5037635449614473675}
   artworkImage: {fileID: 1960253958299892879}
+--- !u!114 &4758069499350296781
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6065280398636944520}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c076a76145acb44f9e9eeb7fee9f472, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6602338876608391797
 GameObject:
   m_ObjectHideFlags: 0
@@ -896,7 +909,7 @@ RectTransform:
   m_GameObject: {fileID: 7095562266279525814}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.75, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1229466050605494896}
   m_RootOrder: 1

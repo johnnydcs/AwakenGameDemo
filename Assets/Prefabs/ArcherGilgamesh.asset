@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cardName: Gilgamesh
   description: King of Kings
-  artwork: {fileID: 21300000, guid: 6d67d24ddceb8ba4481755202a0c3958, type: 3}
+  artwork: {fileID: 21300000, guid: a8465d9747d9f5a41afd2244700f7ae3, type: 3}
   attackDamage: 20
   magicDamage: 5
   manaCost: 5

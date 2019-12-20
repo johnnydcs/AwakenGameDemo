@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2c3de4088ab8a0d4880879ef3849e41a, type: 3}
-  m_Name: CasterMeda
+  m_Name: CasterMedea
   m_EditorClassIdentifier: 
   cardName: Medea
-  description: Mana Hungry
+  description: Lily version
   artwork: {fileID: 21300000, guid: cb98e956ac358ef47b01691e56ab6501, type: 3}
   attackDamage: 0
   magicDamage: 10

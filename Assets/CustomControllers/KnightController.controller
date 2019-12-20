@@ -253,7 +253,7 @@ AnimatorStateMachine:
   m_EntryTransitions: []
   m_StateMachineTransitions: {}
   m_StateMachineBehaviours: []
-  m_AnyStatePosition: {x: 100, y: 0, z: 0}
+  m_AnyStatePosition: {x: 300, y: -100, z: 0}
   m_EntryPosition: {x: 100, y: 30, z: 0}
   m_ExitPosition: {x: 100, y: 60, z: 0}
   m_ParentStateMachinePosition: {x: 800, y: 20, z: 0}

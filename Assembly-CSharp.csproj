@@ -62,8 +62,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\CardDisplay.cs" />
-    <Compile Include="Assets\CardTemplate.cs" />
+    <Compile Include="Assets\Scripts\CardDisplay.cs" />
+    <Compile Include="Assets\Scripts\CardTemplate.cs" />
+    <Compile Include="Assets\Scripts\DeckBehavior.cs" />
     <Compile Include="Assets\Scripts\DragAndDrop.cs" />
     <Compile Include="Assets\Scripts\DropArea.cs" />
     <Compile Include="Assets\Scripts\GridBehavior.cs" />
@@ -71,6 +72,7 @@
     <Compile Include="Assets\Scripts\HitboxCollision.cs" />
     <Compile Include="Assets\Scripts\MonsterMovement.cs" />
     <Compile Include="Assets\Scripts\Movement.cs" />
+    <Compile Include="Assets\Scripts\UpdateSprite.cs" />
     <None Include="Assets\Imported Assets\Demon Blade Lord\readMe.txt" />
     <None Include="Assets\Imported Assets\RainEntertainment\FantasyMonster4\Chaos Knight Warrior\readMe.txt" />
     <Reference Include="Unity.Timeline.Editor">
