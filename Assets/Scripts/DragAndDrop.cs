@@ -7,6 +7,9 @@ public class DragAndDrop : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndD
 {
     public Transform originalParent = null;
 
+    public enum Slot { Melee, Archer, Magical, Enchant };
+    public Slot cardType = Slot.Melee;
+
     public void OnBeginDrag(PointerEventData eventData)
     {
         //Debug.Log("OnBeginDrag");

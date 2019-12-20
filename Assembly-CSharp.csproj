@@ -62,8 +62,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\CardDisplay.cs" />
+    <Compile Include="Assets\CardTemplate.cs" />
     <Compile Include="Assets\Scripts\DragAndDrop.cs" />
     <Compile Include="Assets\Scripts\DropArea.cs" />
+    <Compile Include="Assets\Scripts\GridBehavior.cs" />
+    <Compile Include="Assets\Scripts\GridStatus.cs" />
+    <Compile Include="Assets\Scripts\HitboxCollision.cs" />
     <Compile Include="Assets\Scripts\MonsterMovement.cs" />
     <Compile Include="Assets\Scripts\Movement.cs" />
     <None Include="Assets\Imported Assets\Demon Blade Lord\readMe.txt" />
