@@ -1,15 +1,16 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class DeckBehavior : MonoBehaviour
 {
     public List<string> deck;
-    public Sprite[] cardFaces;
-    public GameObject cardPrefab;
 
-    public static string[] classTypes = new string[] { "Saber", "Archer", "Caster" }; //, "Lancer", "Rider", "Assassin", "Ruler", "Avenger"};
-    public static string[] classRank = new string[] { "Gold", "Silver", "Bronze" };
+    public Sprite[] cardFaces;
+
+    public GameObject cardPrefab;
+    
     public List<string> spriteNames = new List<string>();
 
     // Start is called before the first frame update
@@ -31,14 +32,6 @@ public class DeckBehavior : MonoBehaviour
         for (int i = 0; i < cardFaces.Length; i++)
         {
             spriteNames.Add(cardFaces[i].name);
-        }
-        
-        foreach (string ct in classTypes)
-        {
-            foreach (string sn in spriteNames)
-            {
-                newDeck.Add(ct + " " + sn);
-            }
         }
 
         return newDeck;

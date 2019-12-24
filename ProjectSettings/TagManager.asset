@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - Enemy
+  - Hand
+  - In Play
+  - Deck
   layers:
   - Default
   - TransparentFX

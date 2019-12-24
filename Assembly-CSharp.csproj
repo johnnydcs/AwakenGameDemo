@@ -62,6 +62,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\CardContents.cs" />
     <Compile Include="Assets\Scripts\CardDisplay.cs" />
     <Compile Include="Assets\Scripts\CardTemplate.cs" />
     <Compile Include="Assets\Scripts\DeckBehavior.cs" />
@@ -73,6 +74,7 @@
     <Compile Include="Assets\Scripts\MonsterMovement.cs" />
     <Compile Include="Assets\Scripts\Movement.cs" />
     <Compile Include="Assets\Scripts\UpdateSprite.cs" />
+    <Compile Include="Assets\SpawnHand.cs" />
     <None Include="Assets\Imported Assets\Demon Blade Lord\readMe.txt" />
     <None Include="Assets\Imported Assets\RainEntertainment\FantasyMonster4\Chaos Knight Warrior\readMe.txt" />
     <Reference Include="Unity.Timeline.Editor">

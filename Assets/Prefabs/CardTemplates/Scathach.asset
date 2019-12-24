@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c3de4088ab8a0d4880879ef3849e41a, type: 3}
+  m_Name: Scathach
+  m_EditorClassIdentifier: 
+  cardName: Scathach
+  description: Shishou
+  artwork: {fileID: 21300000, guid: bb16e190ca2e11d41b3c24f8ae402f72, type: 3}
+  attackDamage: 15
+  magicDamage: 15
+  manaCost: 5
+  moveUp: 0
+  moveDown: 0
+  moveLeft: 0
+  moveRight: 0
