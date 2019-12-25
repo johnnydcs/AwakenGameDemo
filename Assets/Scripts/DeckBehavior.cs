@@ -5,18 +5,30 @@ using UnityEngine.UI;
 
 public class DeckBehavior : MonoBehaviour
 {
-    public List<string> deck;
-
-    public Sprite[] cardFaces;
-
     public GameObject cardPrefab;
-    
-    public List<string> spriteNames = new List<string>();
+
+    public int deckSize = 40;
+    public int handSize = 5;
+
+    public GameObject[] deck;
+    public GameObject[] hand;
+    public Button button;
 
     // Start is called before the first frame update
     void Start()
     {
-        DealCards();
+        GenerateDeck();
+        Shuffle();
+        SpawnHand();
+
+        Button theButton = button.GetComponent<Button>();
+        theButton.onClick.AddListener(TaskOnClick);
+    }
+
+    void TaskOnClick()
+    {
+        Debug.Log("*****Clicked on Deck");
+        button.GetComponent<DeckBehavior>().SpawnNewHand();
     }
 
     // Update is called once per frame
@@ -25,49 +37,62 @@ public class DeckBehavior : MonoBehaviour
         
     }
 
-    public List<string> GenerateDeck()
+    void GenerateDeck()
     {
-        List<string> newDeck = new List<string>();
+        deck = new GameObject[deckSize];
 
-        for (int i = 0; i < cardFaces.Length; i++)
+        for (int i = 0; i < deckSize; i++)
         {
-            spriteNames.Add(cardFaces[i].name);
+            deck[i] = cardPrefab;
         }
-
-        return newDeck;
     }
 
-    public void DealCards()
+    void Shuffle()
     {
-        deck = GenerateDeck();
-        Shuffle(deck);
-        foreach (string c in deck)
-        {
-            print(c);
-        }
-        createCardsInDeck();
-    }
+        Debug.Log("*****Shuffling deck.");
 
-    void Shuffle<T>(List<T> list)
-    {
         System.Random random = new System.Random();
-        int n = list.Count;
+        int n = deckSize;
         while (n > 1)
         {
             int k = random.Next(n);
             n--;
-            T temp = list[k];
-            list[k] = list[n];
-            list[n] = temp;
+            GameObject temp = deck[k];
+            deck[k] = deck[n];
+            deck[n] = temp;
         }
     }
 
-    void createCardsInDeck()
+    void SpawnHand()
     {
-        foreach (string card in deck)
+        Debug.Log("*****New hand.");
+
+        hand = new GameObject[handSize];
+
+        for (int i = 0; i < deckSize; i++)
         {
-            GameObject newCard = Instantiate(cardPrefab, new Vector3(transform.position.x, transform.position.y, transform.position.z), Quaternion.identity);
-            newCard.name = card;
+            deck[i] = cardPrefab;
         }
+
+        for (int i = 0; i < handSize; i++)
+        {
+            hand[i] = Instantiate(deck[i]) as GameObject;
+            hand[i].transform.SetParent(GameObject.FindGameObjectWithTag("Hand").transform);
+        }
+    }
+    
+    void SpawnNewHand()
+    {
+        // Discard old hand
+        Debug.Log("*****Discarded hand.");
+        for (int i = 0; i < handSize; i++)
+        {
+            Destroy(hand[i]);
+            hand[i] = null;
+        }
+        
+        Shuffle();
+
+        SpawnHand();
     }
 }

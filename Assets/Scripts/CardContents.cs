@@ -33,5 +33,7 @@ public class CardContents : MonoBehaviour
         rightText.text = card[k].moveRight.ToString();
 
         artworkImage.sprite = card[k].artwork;
+
+        //Debug.Log("CardTitle: " + nameText.text);
     }
 }

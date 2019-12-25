@@ -5,8 +5,6 @@ using UnityEngine.EventSystems;
 
 public class DropArea : MonoBehaviour, IDropHandler, IPointerEnterHandler, IPointerExitHandler
 {
-    public DragAndDrop.Slot itemType = DragAndDrop.Slot.Melee;
-
     public void OnDrop(PointerEventData eventData)
     {
         Debug.Log(eventData.pointerDrag.name + " was dropped on " + gameObject.name);
