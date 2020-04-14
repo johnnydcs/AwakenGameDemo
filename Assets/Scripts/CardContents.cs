@@ -18,7 +18,7 @@ public class CardContents : MonoBehaviour
     void Start()
     {
         // assign a card template from the template array
-        k = Random.Range(0, card.Length); // 0 to 4, exclude 5
+        k = Random.Range(0, card.Length);
 
         nameText.text = card[k].cardName;
         descriptionText.text = card[k].description;
